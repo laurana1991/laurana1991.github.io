@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS desde  CDN. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Nuestro propio archivo de estilo -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body><!--Vamos a agregar class, para tener texto en el centro, y usar una class de bootstrap-->
+    <div class="container d-flex align-items-center h-100">
+      <!--queremos que todo este en una fila, h1,button este en el centro-->
+      <div class="row">
+        <!--dividimos estos item en diferentes secciones, usamos el header-->
+        <header class="text-center col-12"><!--lo que hace text-center, centra el texto, de bootstrap-->
+          <h1 class="text-uppercase"><strong>La gran puesta en marcha del año!</strong></h1>
+        </header>
+          <!--agregamos una seccion, section element, le ponemos text-center, pero no llega al centro-->
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <!--Agreguemos un boton-->
+          <hr>
+          <a href="https://mailchi.mp/06f48f7bd1ac/startupana">
+            <button class="btn btn-primary btn-xl">Enterate más!</button>
+          </a>
+      </section>
+    </div>
+   </div>
+  </body>
+</html>
+<!--queremos que sea responsive, si vamos a bootstrap, vamos a starter template, vemos required meta tag
+copiamos y pegamos, debajo de title. Meta tag nos permite incoporar informacion a nuestra pagina html
+en las paginas web, vemos estas lineas muy seguido, para que sirven? responsive meta tag, "viewport"nos permite
+crear paginas web desarrolladas mobile first. utf-8, quiere decir,vamos a usar este codigo para escribir texto
+en nuestra pagina
+queremos poner una linea horizontal sobre el boton, entonces usamos hr u horizontal line. el hr tag va a estar
+entre h1 y button
+queremos que el boton quede en el medio, vamos a usar flex, pero vemos que no pasa nada, entonces queremos que se
+expanda por eso usamos heigh 100 o h-100
+queremos que tenga espacio entre el titulo y el boton, que podemos hacer? buffer class, si lo dejamos
+Asi en el div, no pasa nada, pero vamos agregarle estilo en css
+ya que creamos el link con el formulario nos situamos en el boton y ponemos el link, a href-->
